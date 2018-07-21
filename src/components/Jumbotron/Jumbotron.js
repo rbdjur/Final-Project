@@ -35,20 +35,7 @@ const Jumbotron = () =>
         <p class="lead">(props.itemPrice)</p>
         <hr class="my-4" />
         <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <a class="btn btn-primary btn-sm" href="" role="button">Rent</a>
-        * for the rent button, add a modal pop up with 2 calendar icons dividing the page into halves with calendar pop up to select date
-
-        "FROM" -> "TO"
-
-
-    <a class="btn btn-primary btn-sm" href="" role="button">Ask A Question</a>
-
-         * for the "Ask A Question" button, add a modal pop with a field text input form and a submission button.
-
-     <a class="btn btn-primary btn-sm" href="" role="button">Reviews</a>
-
-        * for the "Ask A Question" button, add a modal pop with a field text input form and a submission button.
-        
+            
     </div>
 
 
