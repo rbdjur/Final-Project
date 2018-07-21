@@ -1,11 +1,15 @@
-#rent-btn {
-    align-items: end;
-}
-
-#question-btn {
+#owner-review-btn {
+    color:black;
+    display: flex,
 
 }
 
-#reviews-btn {
+#question-btn { 
+    color:black;
+    display: flex,
+}
 
+#item-review-btn {
+    color:black;
+    display: flex,
 }

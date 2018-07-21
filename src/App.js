@@ -20,9 +20,9 @@ class App extends Component {
   }
 
 
-handleSelect(date) {
-  console.log(date);
-}
+  handleSelect(date) {
+    console.log(date);
+  }
 
   componentDidMount() {
 
@@ -36,11 +36,19 @@ handleSelect(date) {
         </div>
 
         <Jumbotron />
-        <Interact/>
-        <DateRange 
-        onInit={this.handleSelect}
-        onChange={this.handleSelect}
-        />
+        <Interact />
+        <div className="row">
+          <div className="col-2">
+          </div> 
+          <div className="col-8">
+          <DateRange
+            onInit={this.handleSelect}
+            onChange={this.handleSelect}
+          />
+          </div> 
+          <div className="col-2">
+          </div> 
+        </div>
         <Confirm />
 
       </div>
