@@ -1,3 +1,8 @@
 #confirm-btn {
     justify-content: center;
 }
+
+#confirm-box{
+    border: 2px green solid;
+}
+

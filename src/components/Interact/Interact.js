@@ -2,100 +2,56 @@ import React from "react";
 import "./Interact.css";
 
 const Interact = () =>
-    <div className="container">
-        <div className="row">
-        </div>
-        <div className="row">
-            <div className="col-1">
+    // <div className="container">
+    // <div className=".mx-auto px-4"/>
 
-             {/* <a className="btn btn-primary btn-sm" href="" role="button" id="question-btn">Ask A Question</a> */}
+    // <div className="mx-auto">
+    <div className="wrapper">
+        <div className="row" id="interact-box">
 
-
-                {/* col-2
-                  1 of 3 */}
-
-
-
-                {/* <a className="btn btn-primary btn-sm" href="" role="button" id="rent-btn">Rent</a> */}
-
-
-
-                {/* // * for the rent button, add a modal pop up with 2 calendar icons dividing the page into halves with calendar pop up to select date
-            // "FROM" -> "TO" */}
+            <div className="col-4">
             </div>
+            {/* <div class="d-flex justify-content-center" id="Interact"> */}
+            <div class="d-flex justify-content-center" id="Interact">
+                <a className="btn btn-primary btn-sm" href="" role="button" id="inquire-btn">Inquire</a>
 
-            <div className="col-1">
+                {/* <div className="col-4"> */}
+                <a className="btn btn-primary btn-sm" href="" role="button" id="view-btn">View Reviews</a>
+                {/* </div> */}
+
+                {/* <div className="col-4"> */}
+                <a className="btn btn-primary btn-sm" href="" role="button" id="confirm-btn">Confirm</a>
+                {/* </div> */}
             </div>
-
-            <div className="col-1">
-            </div>
-
-            <div className="col-1">
-            </div>
-
-            <div className="col-1">
-            <a className="mx-auto" href="" role="button" id="item-review-btn">Item Reviews</a>
-            </div>
-
-            <div className="col-1">
-            <a className="mx-auto" href="" role="button" id="question-btn">Ask A Question</a>
-            </div>
-
-            <div className="col-1">
-            <a className="mx-auto" href="" role="button" id="owner-review-btn">Owner Review</a>
-            </div>
-
-            <div className="col-1">
-            </div>
-
-            <div className="col-1">
-            </div>
-
-
-            <div className="col-2">
-            </div>
-
-
-            <div className="col-1">
-            </div>
-
-            
-            
-            <div className="col-1">
-                {/* col-2
-                3 of 3 */}
-
-
-
-                {/* <a className="btn btn-primary btn-sm" href="" role="button" id="reviews-btn">Reviews</a> */}
-
-
-
-                {/* // * for the "Ask A Question" button, add a modal pop with a field text input form and a submission button. */}
-            </div>
-            {/* <div className="col-9">
-            
-    </div> */}
+        
+        <div className="col-4">
         </div>
 
-
-
-
-
-        <div>
-            {/* <a class="btn btn-primary btn-sm" href="" role="button">Rent</a>
-// * for the rent button, add a modal pop up with 2 calendar icons dividing the page into halves with calendar pop up to select date
-
-// "FROM" -> "TO" */}
-
-            {/* <a class="btn btn-primary btn-sm" href="" role="button">Ask A Question</a>
-
-            // * for the "Ask A Question" button, add a modal pop with a field text input form and a submission button. */}
-
-            {/* <a class="btn btn-primary btn-sm" href="" role="button">Reviews</a>
-        // * for the "Ask A Question" button, add a modal pop with a field text input form and a submission button. */}
 
         </div>
     </div>
+{/* </div> */ }
+
+{/* <div className="row .mx-auto">
+            <div className="col-3">
+            </div> */}
+
+
+{/* "mx-auto" */ }
+{/* <div className="col-3">
+                <a className="btn btn-primary btn-sm" href="" role="button" id="question-btn">Ask a Q</a>
+            </div> */}
+
+
+{/* <div className="col-3">
+                <a className="btn btn-primary btn-sm" href="" role="button" id="owner-review-btn">Owner Review</a>
+            </div> */}
+
+{/* <div className="col-3">
+                <a className="btn btn-primary btn-sm" href="" role="button" id="item-review-btn">Item Reviews</a>
+            </div> */}
+
+{/* </div> */ }
+// </div>
 
 export default Interact;

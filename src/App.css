@@ -1,3 +1,21 @@
+#interact-box {
+  display:flex;
+  align-items: stretch;
+  border: 2 px blue solid;
+}
+
+#calendar {
+  /* display:flex; */
+  float:center;
+  border: 2 px green solid;
+}
+
+#stuff {
+  display:flex;
+  border: 2 px green solid;
+  
+}
+
 .App {
   text-align: center;
 }

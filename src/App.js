@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+
+
 import Navbar from "./components/Navbar/Navbar"
 import Jumbotron from "./components/Jumbotron/Jumbotron"
 
@@ -8,9 +9,12 @@ import Jumbotron from "./components/Jumbotron/Jumbotron"
 import { DateRange } from 'react-date-range';
 
 
-import Confirm from "./components/Confirm/Confirm"
+// import Confirm from "./components/Confirm/Confirm"
 import Interact from "./components/Interact/Interact"
 
+import "./components/Navbar/Navbar.css";
+import './App.css';
+import "./components/Calendar/Calendar.css";
 
 
 class App extends Component {
@@ -31,26 +35,26 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div>
+        {/* <div> */}
           <Navbar />
-        </div>
+        {/* </div> */}
+        <Jumbotron id="jumbotron" />
 
-        <Jumbotron />
-        <Interact />
-        <div className="row">
-          <div className="col-2">
-          </div> 
-          <div className="col-8">
-          <DateRange
+          <div className="row" >
+          <div className="mx-auto" id="calendar">
+
+            <DateRange id="date-range"
             onInit={this.handleSelect}
             onChange={this.handleSelect}
           />
-          </div> 
-          <div className="col-2">
-          </div> 
-        </div>
-        <Confirm />
 
+          </div>
+          </div>
+
+       
+       <Interact />
+       
+        
       </div>
     );
   }

@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./Jumbotron.css"
 const Jumbotron = () =>
     //     <div className="jumbotron jumbotron-fluid" id="jumbotron">
     //         <div className="container">
@@ -27,13 +27,17 @@ const Jumbotron = () =>
     //     </div>
     // </div>
 
-    <div class="jumbotron">
-        <h1 class="display-4">(props.itemName)</h1>
+    <div className="jumbotron" id="jumbotron">
+        <h1 className="display-4">(props.itemName)</h1>
 
         <img src="asdf" />
-        <p class="lead">(props.itemDescription)</p>
-        <p class="lead">(props.itemPrice)</p>
-        <hr class="my-4" />
+       
+        <hr className="my-4" />
+
+         <p className="lead">(props.itemDescription)</p>
+        <p className="lead">(props.itemPrice)</p>
+
+
         <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
             
     </div>

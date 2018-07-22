@@ -1,3 +1,4 @@
 #nav-bar{
-    position: relative,
+    position: flex;
+    border: 2px green solid,
 }

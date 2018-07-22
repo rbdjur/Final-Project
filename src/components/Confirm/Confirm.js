@@ -1,7 +1,8 @@
 import React from "react";
+import "./Confirm.css";
 
 const Confirm = () =>
-<div className="container">
+<div className=".mx-auto px-4" id="confirm-box">
 <div className="row">
 </div>
 <div className="row">

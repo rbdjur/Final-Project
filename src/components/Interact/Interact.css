@@ -1,15 +1,20 @@
-#owner-review-btn {
-    color:black;
-    display: flex,
-
+#inquire-btn {
+    /* color: */
+    /* float: left; */
 }
 
-#question-btn { 
-    color:black;
-    display: flex,
+#view-btn {
+    /* color: */
+    /* float: right; */
 }
 
-#item-review-btn {
-    color:black;
-    display: flex,
+#confirm-btn { 
+    /* color: */
+    /* float: right; */
 }
+
+#interact-box{
+    border: 2px green solid;
+    /* float: */
+}
+

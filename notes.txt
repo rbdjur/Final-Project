@@ -1,0 +1,11 @@
+To do list:
+
+1. Center the calendar 
+2. Center the buttons
+3. Create space between the buttons 
+
+Create a page for a form to input 
+- name 
+- item 
+- location 
+- 
