@@ -9,9 +9,49 @@ const Interact = () =>
 
     <div className="d-flex justify-content-center" id="interact-box">
         {/* <a className="p-3" href="">Inquire</a> */}
-        <a className="btn btn-primary btn-sm" href="">Inquire</a>
-        <a className="btn btn-primary btn-sm" href="">View Reviews</a>
+
+        {/* <div className="col-2">
+        </div> */}
+
+        <div className="col-1">
+        </div>
+
+        {/* <div className="col-1">
+        </div> */}
+
+        <div className="col-3">
+        <a className="btn btn-primary btn-sm" id="inquire-btn" href="">Inquire</a>
+        </div>
+
+        <div className="col-1">
+        </div>
+
+
+        <div className="col-2">
+        <a className="btn btn-primary btn-sm" id="view-btn" href="">View Reviews</a>
+        </div>
+
+        <div className="col-1">
+        </div>
+
+        <div className="col-2">
         <a className="btn btn-primary btn-sm" href="">Confirm</a>
+
+        </div>
+
+        <div className="col-1">
+        </div>
+
+        <div className="col-1">
+        </div>
+
+        {/* <div className="col-1">
+        </div> */}
+
+
+        {/* <a className="btn btn-primary btn-sm" href="">Inquire</a>
+        <a className="btn btn-primary btn-sm" href="">View Reviews</a>
+        <a className="btn btn-primary btn-sm" href="">Confirm</a> */}
     </div>
 
 

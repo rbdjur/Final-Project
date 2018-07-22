@@ -1,16 +1,16 @@
 #inquire-btn {
     /* color: */
-    /* float: left; */
+    float: right;
 }
 
 #view-btn {
     /* color: */
-    /* float: right; */
+    /* float: left; */
 }
 
 #confirm-btn { 
     /* color: */
-    /* float: right; */
+    float: left;
 }
 
 #interact-box{
