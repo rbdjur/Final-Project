@@ -1,8 +1,8 @@
 To do list:
 
-1. Center the calendar 
-2. Center the buttons
-3. Create space between the buttons 
+1. Center the calendar - Done
+2. Center the buttons - Done 
+3. Create space between the buttons - Done 
 
 Create a page for a form to input 
 - name 

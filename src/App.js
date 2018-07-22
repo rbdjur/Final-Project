@@ -11,6 +11,7 @@ import { DateRange } from 'react-date-range';
 
 // import Confirm from "./components/Confirm/Confirm"
 import Interact from "./components/Interact/Interact"
+import Inquire from "./components/Inquire/Inquire"
 
 import "./components/Navbar/Navbar.css";
 import './App.css';
@@ -50,9 +51,12 @@ class App extends Component {
 
           </div>
           </div>
-
-       
        <Interact />
+
+
+
+
+       <Inquire />
        
         
       </div>
