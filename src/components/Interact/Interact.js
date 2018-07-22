@@ -6,30 +6,69 @@ const Interact = () =>
     // <div className=".mx-auto px-4"/>
 
     // <div className="mx-auto">
-    <div className="wrapper">
-        <div className="row" id="interact-box">
 
-            <div className="col-4">
-            </div>
-            {/* <div class="d-flex justify-content-center" id="Interact"> */}
-            <div class="d-flex justify-content-center" id="Interact">
-                <a className="btn btn-primary btn-sm" href="" role="button" id="inquire-btn">Inquire</a>
-
-                {/* <div className="col-4"> */}
-                <a className="btn btn-primary btn-sm" href="" role="button" id="view-btn">View Reviews</a>
-                {/* </div> */}
-
-                {/* <div className="col-4"> */}
-                <a className="btn btn-primary btn-sm" href="" role="button" id="confirm-btn">Confirm</a>
-                {/* </div> */}
-            </div>
-        
-        <div className="col-4">
-        </div>
-
-
-        </div>
+    <div className="d-flex justify-content-center" id="interact-box">
+        {/* <a className="p-3" href="">Inquire</a> */}
+        <a className="btn btn-primary btn-sm" href="">Inquire</a>
+        <a className="btn btn-primary btn-sm" href="">View Reviews</a>
+        <a className="btn btn-primary btn-sm" href="">Confirm</a>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// <div className="wrapper">
+
+//     <div class="d-flex justify-content-right"
+//         id="Interact">
+//         <div>
+//             <a className="btn btn-primary btn-sm" href="" role="button" id="inquire-btn">Inquire</a>
+//         </div>
+
+
+//     </div>
+
+
+//     <div className="row" id="interact-box">
+//     </div>
+
+
+// </div>
+
+
+
+{/* <div class="d-flex justify-content-center" id="Interact"> */ }
+
+{/* <div class="d-flex justify-content-center"  */ }
+
+{/* <div class="d-lg-flex" */ }
+
+
+{/* <div>
+                <a className="btn btn-primary btn-sm" href="" role="button" id="inquire-btn">Inquire</a>
+            </div>
+
+            <div>
+                <a className="btn btn-primary btn-sm" href="" role="button" id="view-btn">View Reviews</a>
+              
+
+                <a className="btn btn-primary btn-sm" href="" role="button" id="confirm-btn">Confirm</a>
+            </div> */}
+
+
+// </div>
 {/* </div> */ }
 
 {/* <div className="row .mx-auto">
