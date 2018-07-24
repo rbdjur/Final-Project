@@ -5,7 +5,8 @@
 
 #view-btn {
     /* color: */
-    /* float: left; */
+    /* float: right; */
+    /* display:flex; */
 }
 
 #confirm-btn { 
