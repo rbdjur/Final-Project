@@ -109,14 +109,13 @@ const Inquire = () =>
                     <form class="needs-validation" novalidate>
                         <div class="form-row">
                             <div class="col-md-3 mb-3">
-                                {/* <div class="col-md-3 mb-3"> */}
+                                
                                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required></input>            <label class="form-check-label" for="invalidCheck">
                                     Agree to terms and conditions
                     </label>
                                 <div class="invalid-feedback">
                                     You must agree before submitting.
                     </div>
-                                {/* </div> */}
                             </div>
                         </div>
                     </form>
@@ -133,44 +132,5 @@ const Inquire = () =>
             </div>
 
             export default Inquire;
-            
-            
-            
-            
-{/* <div class="form-group">                                <div class="form-check">                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required></input>                                   <label class="form-check-label" for="invalidCheck">                                  Agree to terms and conditions
-                        </label>
-
-            <div class="invalid-feedback">                You must agree before submitting.
-                        </div>
-        </div>
-        </div>
-        <button class="btn btn-primary" type="submit">Submit form
-                    </button> */}
-
-
-            {/* </div> */}
-
-
-            {/* //Example starter JavaScript for disabling form submissions if there are invalid fields */}
-
-            {/* <script> */}
-
-            {/* (function() {
-    'use strict';                                       window.addEventListener('load', function() {
-// Fetch all the forms we want to apply custom Bootstrap validation styles to
-    let forms = document.getElementsByClassName('needs-validation');
-    // Loop over them and prevent submission
-     let validation = Array.prototype.filter.call(forms, function(form) {
-                                             form.addEventListener('submit', function (event) {
-                                                 if (form.checkValidity() === false) {
-                                                     event.preventDefault();
-                                                     event.stopPropagation();
-                                                 }
-                                                 form.classList.add('was-validated');
-                                             }, false);
-                                         });
-                                       }, false);
-                                     })(); */}
-            {/* </script> */}
 
 

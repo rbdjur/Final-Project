@@ -36,9 +36,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        {/* <div> */}
+        
           <Navbar />
-        {/* </div> */}
+        
         <Jumbotron id="jumbotron" />
 
           <div className="row" >
@@ -52,13 +52,7 @@ class App extends Component {
           </div>
           </div>
        <Interact />
-
-
-
-
        <Inquire />
-       
-        
       </div>
     );
   }
