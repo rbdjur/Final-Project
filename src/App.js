@@ -52,7 +52,6 @@ class App extends Component {
           </div>
           </div>
        <Interact />
-       <Inquire />
       </div>
     );
   }
