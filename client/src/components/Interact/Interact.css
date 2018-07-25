@@ -1,0 +1,25 @@
+#inquire-btn {
+    /* color: */
+    float: right;
+}
+
+#view-btn {
+    /* color: */
+    /* float: right; */
+    /* display:flex; */
+}
+
+#confirm-btn { 
+    /* color: */
+    float: left;
+}
+
+#interact-box{
+    border: 2px green solid;
+    /* float: */
+}
+
+.checked {
+    color: orange;
+}
+
