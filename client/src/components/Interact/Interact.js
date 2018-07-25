@@ -194,19 +194,22 @@ const Interact = () =>
 
                         {/* <!-- Add icon library --> */}
                         <div className="container">
-                        <div className="row">
-                        <div className="col-3">
-                            
-                    
-                        <ion-icon id="bonfireIcon" name="bonfire"></ion-icon>
-                        <ion-icon id="bonfireIcon" name="bonfire"></ion-icon>
-                        <ion-icon id="bonfireIcon" name="bonfire"></ion-icon>
-                        <ion-icon id="bonfireIcon" name="bonfire"></ion-icon>
+                            <div className="row">
+                            Leave a rating:
+                                <div className="col-6" id="bonfire-div">
 
+                                    <ion-icon size="large" id="bonfireIcon" name="bonfire"></ion-icon>
 
-                        <ion-icon name="bonfire"></ion-icon>
-                        </div>
-                        </div>
+                                    <ion-icon size="large" id="bonfireIcon" name="bonfire"></ion-icon>
+
+                                    <ion-icon size="large" id="bonfireIcon" name="bonfire"></ion-icon>
+
+                                    <ion-icon size="large" id="bonfireIcon" name="bonfire"></ion-icon>
+
+                                    <ion-icon size="small" id="bonfireIcon" name="bonfire"></ion-icon>
+
+                                </div>
+                            </div>
                         </div>
                         {/* </div> */}
 

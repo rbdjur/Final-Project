@@ -23,3 +23,23 @@
     color: orange;
 }
 
+#bonfireIcon {
+    font-size: 18px;
+
+}
+
+/* ion-icon {
+    unicode-bidi: bidi-override;
+        direction: rtl;
+
+} */
+
+.col-6 {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+ion-icon:hover {
+        color:red;
+        background-color: orange;
+    }
