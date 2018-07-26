@@ -195,18 +195,29 @@ const Interact = () =>
                         {/* <!-- Add icon library --> */}
                         <div className="container">
                             <div className="row">
-                            Leave a rating:
+                                Leave a rating:
                                 <div className="col-6" id="bonfire-div">
 
-                                    <ion-icon size="large" id="bonfireIcon" name="bonfire"></ion-icon>
+                                    {/* <div className="row" id="star-rows"> */}
+                                        <ion-icon
+                                        className="none" size="large" id="bonfireIcon" name="bonfire">
+                                            {/* <div     className="tooltiptext">1 star</div>  */}
 
-                                    <ion-icon size="large" id="bonfireIcon" name="bonfire"></ion-icon>
+                                        </ion-icon>
 
-                                    <ion-icon size="large" id="bonfireIcon" name="bonfire"></ion-icon>
+                                        <ion-icon className="none" size="large" id="bonfireIcon" name="bonfire"></ion-icon>
 
-                                    <ion-icon size="large" id="bonfireIcon" name="bonfire"></ion-icon>
+                                        <ion-icon 
+                                        className="none"
+                                        size="large" id="bonfireIcon" name="bonfire"></ion-icon>
 
-                                    <ion-icon size="small" id="bonfireIcon" name="bonfire"></ion-icon>
+                                        <ion-icon
+                                        className="none" size="large" id="bonfireIcon" name="bonfire"></ion-icon>
+
+                                        <ion-icon
+                                        className="none" size="large" id="bonfireIcon" name="bonfire"></ion-icon>
+
+                                    {/* </div> */}
 
                                 </div>
                             </div>
@@ -260,12 +271,12 @@ const Interact = () =>
         <div className="col-2">
 
             {/* <!-- Button trigger modal --> */}
-            <button type="button" class="btn btn-primary" id="confirm-btn" data-toggle="modal" data-target="#exampleModal">
+            <button type="button" class="btn btn-primary" id="confirm-btn" data-toggle="modal" data-target="#confirmModal">
                 Confirm
                 </button>
 
             {/* <!-- Modal --> */}
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="confirmModal" tabindex="1" role="dialog" aria-labelledby="confirmModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
