@@ -9,6 +9,14 @@
     /* display:flex; */
 }
 
+#buyer-item-modal {
+    /* padding-top: 1rem; */
+    padding-right: 2rem;
+    padding-left: 2rem;
+    /* padding-bottom: 1rem; */
+
+}
+
 #confirm-btn { 
     /* color: */
     float: left;
@@ -29,10 +37,28 @@
 }
 
 
-#bonfireIcon {
+/* #bonfireIcon {
     unicode-bidi: bidi-override;
     direction: rtl;
-}
+} */
+
+.rating > span:hover:before {
+    content: "\2605";
+    position: absolute;
+    color: black;
+ }
+
+ .rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    color:black
+  }
+  .rating > span:hover:before,
+  .rating > span:hover ~ span:before {
+     content: "\2605";
+     position: absolute;
+     color:gold;
+  }
 
 
 
@@ -42,35 +68,35 @@
 } */
 
 
-#bonfireIcon ion-icon {
+/* #bonfireIcon ion-icon {
     display: inline-block;
     position: relative;
-}
+} */
 
 /* .col-6 ion-icon {
     display: inline-block;
     position: relative;
 } */
 
-#bonfireIcon:hover {
+/* #bonfireIcon:hover {
 
     content: "/2605";
     position: absolute;
 
-}
+} */
 
 /* #bonfireIcon:hover:before {
     content: "/2605";
     position: absolute;
 } */
 
-#bonfireIcon:hover {
+/* #bonfireIcon:hover {
 
     color:orange;
     background-color: red;
     position: relative;
 
-}
+} */
 
 
 /* #bonfireIcon:hover */

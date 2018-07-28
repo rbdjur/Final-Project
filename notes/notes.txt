@@ -1,0 +1,36 @@
+1.  In ConfirmationRoutes.js
+
+originally I had: 
+
+"
+
+router.get("/", (req, res) => {
+    res.send({ message: "hi"})
+    console.log("inside router.get on ConfirmationRoutes.js")
+ }).then(function (response) {
+     res.send("hi");
+     console.log("This is the response" + response)
+ }).catch(function (error) {
+    console.log("this is the catch error" + error)
+});
+" 
+
+but an error return stating that the .then() and .catch() were not functions.  So I deleted them and once they were deleted, I ran the code with just the .get(). From there I went to the correct route and successfully established the route using express.
+
+2.  An error occured stating Cannot Get "/".  I couldnt think of why this error occured.  However, I remembered that in order to communicate the ConfirmationRoutes.js page with the server, I must export a variable assigned the ConfirmationRoutes.js page: 
+
+        "const router = require("express").Router();"
+
+After assigning the variable a value, I exported the variable using module exports as follows below: 
+
+        " module.exports = router;"
+
+
+  Once this variable is exported, I went to server.js page and used the code: 
+
+        "app.use(router);"
+
+The router is the entire ConfirmationRoutes.js page, so once this page is used by express, I was able to draw the codes from ConfirmationRoutes onto the server page.  These codes executed when I went to the correct get route. 
+
+3.  Use reactRouter to serve the front end code on App.js + use week 20 HW exercise 4/5 and videos. 
+

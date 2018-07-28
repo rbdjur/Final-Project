@@ -9,6 +9,8 @@ const router = require("./routes/ConfirmationRoutes")
 
 // Define port
 const PORT = 3000
+// const PORT = process.env.PORT || 3000
+
 
 // Mongoose connection
 const db  = mongoose.connection; 
@@ -23,10 +25,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Set up a static folder (public) for our web app
 app.use(express.static("public"));
 
+app.use(router);
+
 // For test reasons, we utilize test database - use cities collections - inside should be city berkeey and attractions.
 mongoose.connect("mongodb://localhost/test")
 
-app.use(router);
+// // Connect to the Mongo DB
+// mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reactreadinglist");
 
 // start the server
 app.listen(PORT, function() {

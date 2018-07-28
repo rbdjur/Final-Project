@@ -15,6 +15,10 @@ const Interact = () =>
         <div className="col-2">
         </div>
 
+        {/* ------------------------------------------------------------------------------------------------------
+                                        Inquire Tab 
+
+------------------------------------------------------------------------------------------------------ */}
         <div className="col-1">
             {/* <a className="btn btn-primary btn-md" id="inquire-btn" href="">Inquire</a> */}
 
@@ -166,6 +170,14 @@ const Interact = () =>
 
 
 
+
+
+
+        {/* ------------------------------------------------------------------------------------------------------
+                                        Review Tab 
+
+------------------------------------------------------------------------------------------------------ */}
+
         <div className="col-1">
             <button type="button" class="btn btn-primary" id="view-btn" data-toggle="modal" data-target="#exampleModalLong">
                 Reviews
@@ -182,7 +194,7 @@ const Interact = () =>
                             </button>
                         </div>
                         {/* <div class="modal-body"> */}
-                        <div class="modal-dialog">
+                        <div class="modal-dialog" id="buyer-item-modal">
                             Hello,
 
                             My name is ronaldo Deguzman. I am sitting at starbucks right now doing my coding project.  Currently, I am working on a modal pop up.  There is one issue however.  Right now the text inside the modal pop up does not stay within the modal box.  I wonder why that is?  I am going to manipulate the modal html.  If i do not find a resolution that way, I will create a html element id and put specific id paramaters such as text staying within the box.  I do not recall the text code or function but I will use the wrap function to accomplish this goal.
@@ -198,31 +210,39 @@ const Interact = () =>
                                 Leave a rating:
                                 <div className="col-6" id="bonfire-div">
 
-                                    {/* <div className="row" id="star-rows"> */}
-                                        <ion-icon
+                                    <div className="rating">
+                                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                    </div>
+
+
+
+
+
+                                    {/* <ion-icon
                                         className="none" size="large" id="bonfireIcon" name="bonfire">
-                                            {/* <div     className="tooltiptext">1 star</div>  */}
 
-                                        </ion-icon>
 
-                                        <ion-icon className="none" size="large" id="bonfireIcon" name="bonfire"></ion-icon>
+                                    </ion-icon>
 
-                                        <ion-icon 
+                                    <ion-icon className="none" size="large" id="bonfireIcon" name="bonfire"></ion-icon>
+
+                                    <ion-icon
                                         className="none"
                                         size="large" id="bonfireIcon" name="bonfire"></ion-icon>
 
-                                        <ion-icon
+                                    <ion-icon
                                         className="none" size="large" id="bonfireIcon" name="bonfire"></ion-icon>
 
-                                        <ion-icon
-                                        className="none" size="large" id="bonfireIcon" name="bonfire"></ion-icon>
+                                    <ion-icon
+                                        className="none" size="large" id="bonfireIcon" name="bonfire"></ion-icon> */}
 
-                                    {/* </div> */}
+
 
                                 </div>
                             </div>
                         </div>
-                        {/* </div> */}
+
+
 
                         {/* <i class="material-icons">
                                     star_rate
@@ -268,8 +288,14 @@ const Interact = () =>
         </div>
 
 
-        <div className="col-2">
 
+
+        {/* ------------------------------------------------------------------------------------------------------
+                                        Confirm Tab 
+
+------------------------------------------------------------------------------------------------------ */}
+
+        <div className="col-2">
             {/* <!-- Button trigger modal --> */}
             <button type="button" class="btn btn-primary" id="confirm-btn" data-toggle="modal" data-target="#confirmModal">
                 Confirm
