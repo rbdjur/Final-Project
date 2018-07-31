@@ -6,11 +6,6 @@ import JumbotronPrice from "./JumbotronPrice"
 import JumbotronName from "./JumbotronName";
 
 
-
-
-
-
-
 const Jumbotron = () =>
 
     <div className="jumbotron" id="jumbotron">
