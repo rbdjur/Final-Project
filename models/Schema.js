@@ -4,6 +4,7 @@ const Schema = mongoose.Schema;
 const DataSchema = new Schema({
     name: { type: String, required: true },
     picture: { type: String, },
+    // Follow up on picture - How will pictures be stored in the database? as a string?
     description: {type: String, required: true },
     price: { type: Number, required: true }
 
