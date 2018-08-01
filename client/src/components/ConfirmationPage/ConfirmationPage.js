@@ -14,6 +14,7 @@ import Interact from "../Interact/Interact"
 // CSS Components 
 import "../Navbar/Navbar.css";
 import "../Interact/Interact.css";
+import Chatbox from "../Chatbox/Chatbox";
 
 
 
@@ -32,6 +33,7 @@ const ConfirmationPage = () =>
             </div>
         </div>
         <Interact />
+        {/* <Chatbox /> */}
     </div>
 
     export default ConfirmationPage;

@@ -2,7 +2,7 @@ const axios = require("axios");
 const router = require("express").Router();
 const path = require("path");
 
-router.get("/confirmation", (req, res) => {
+router.get("/Confirmation", (req, res) => {
     // res.send({ message: "hi"})
     res.sendFile(path.join(__dirname, "../Final-Project./client/src/App.js"));
     console.log("inside router.get on ConfirmationRoutes.js")

@@ -34,3 +34,84 @@ The router is the entire ConfirmationRoutes.js page, so once this page is used b
 
 3.  Use reactRouter to serve the front end code on App.js + use week 20 HW exercise 4/5 and videos. 
 
+4. July 30, 11:45 pm
+-Downloaded "npm install --save express@4.15.2" for on socket.io website in order to implement the chat feature. Installed in the backend files. 
+
+5. July 31 - 1:30 A
+
+downloaded:
+"
+    npm install --save socket.io
+
+"
+
+added html and minimal css and html to the current page.  
+
+Right now... trying to implement socket.io, I added some html to the "Inquire" tab under the "Interactive" component.  
+- The new form is input, commented out possible alternatives. 
+
+In the index.html page I put the socket.io script tag before the body.  example: 
+"
+    <script src="/socket.io/socket.io.js"></script>
+<script>
+  var socket = io();
+</script>
+"
+
+In the server.js file, I added 
+
+"
+var app = require('express')();
+var http = require('http').Server(app);
+var io = require('socket.io')(http);
+"
+
+Note to self: Comment back some comments outs.  
+
+Before I could get the front end to render, however when the socket.io settings are turned on, the front end cannot render.
+
+Error I receive is :
+"
+inside router.get on ConfirmationRoutes.js
+Error: ENOENT: no such file or directory, stat '/Users/deguzman714/first_day_stuff/Projects/Final-Project/Final-Project./client/src/App.js'
+
+"
+
+Need to work on getting those features of socket.io working, especially the chat box of server.js.
+
+
+
+Jessica's page 
+
+OG route:
+
+each route for:
+bikes, tickets, shoes 
+
+
+
+Mongo database 
+
+{
+    category:"bikes"
+    name:"specizlized hybrid"
+    photo: "my.jpg"
+
+    /:category
+}
+
+
+
+on component did mount {
+    render() {
+        axios
+    }
+}
+
+
+
+
+Comment out the fields on the "Inquire" page, only leave a message box. 
+
+
+

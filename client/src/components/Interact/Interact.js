@@ -1,6 +1,11 @@
 import React from "react";
 import "./Interact.css";
 
+import Chatbox from "../Chatbox/Chatbox";
+import "../Chatbox/Chatbox.css"
+
+// /Users/deguzman714/first_day_stuff/Projects/Final-Project/client/src/components/Chatbox
+
 const Interact = () =>
     // possible html + css styling below...
 
@@ -32,129 +37,162 @@ const Interact = () =>
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Contact Information</h5>
+                            <h5 class="modal-title" id="exampleModalLabel">Leave a message for owner</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">
+                       
+               
+            
+        
 
 
-                            <form class="needs-validation" novalidate>
-                                <div class="form-row">
+                        {/* <div class="modal-body"> */}
+                            {/* <form class="needs-validation" novalidate> */}
+                                {/* <div class="form-row"> */}
 
 
-                                    <div class="col-md-3 mb-3">
+                                    {/* <div class="col-md-3 mb-3">
                                         <label for="validationCustom01">First Name
-                        </label>
+                                        </label>
                                         <input type="text" class="form-control" id="validationCustom01" placeholder="First Name" required>
                                         </input>
 
                                         <div class="invalid-feedback">
                                             Please provide a valid first name.
-                        </div>
-                                    </div>
+                                         </div>
+                                    </div> */}
 
 
-                                    <div class="col-md-3 mb-3">
+                                    {/* <div class="col-md-3 mb-3">
                                         <label for="validationCustom02">Last Name</label>
                                         <input type="text" class="form-control" id="validationCustom02" placeholder="Last Name" required>
                                         </input>
 
                                         <div class="invalid-feedback">
                                             Please provide a valid email
-                        </div>
-                                    </div>
+                                        </div>
+                                    </div> */}
 
-                                </div>
-                            </form>
-
-
-                            <form class="needs-validation" novalidate>
-                                <div class="form-row">
+                                {/* </div> */}
 
 
-                                    <div class="col-md-3 mb-3">
-                                        <label for="validationCustom03">Phone Number
-                        </label>
-                                        <input type="text" class="form-control" id="validationCustom03" placeholder="XXX-XXX-XXX" required>
-                                        </input>
-
-                                        <div class="invalid-feedback">Please provide a valid phone number.
-                        </div>
-                                    </div>
+                            {/* </form> */}
 
 
-                                    <div class="col-md-3 mb-3">
-                                        <label for="validationCustom04">e-mail</label>
-                                        <input type="text" class="form-control" id="validationCustom04" placeholder="e-mail" required>
-                                        </input>
-
-                                        <div class="invalid-feedback">            Please provide a valid email
-                        </div>
-                                    </div>
-                                </div>
-                            </form>
+                            {/* <form class="needs-validation" novalidate> */}
+                                {/* <div class="form-row"> */}
 
 
-
-                            <form class="needs-validation" novalidate>
-                                <div class="form-row">
-
-
-                                    <div class="col-md-3 mb-3">
-                                        <label for="validationCustom05">City
-                        </label>
-                                        <input type="text" class="form-control" id="validationCustom05" placeholder="City" required>
-                                        </input>
-
-                                        <div class="invalid-feedback">        Please provide a valid city.
-                        </div>
-                                    </div>
+                                    {/* <div class="col-md-3 mb-3"> */}
+                                        {/* <label for="validationCustom03">Phone Number
+                                        </label> */}
 
 
-                                    <div class="col-md-3 mb-3">
-                                        <label for="validationCustom06">State</label>
-                                        <input type="text" class="form-control" id="validationCustom06" placeholder="State" required>
-                                        </input>
+                                        {/* <input type="text" class="form-control" id="validationCustom03" placeholder="XXX-XXX-XXX" required>
+                                        </input> */}
 
-                                        <div class="invalid-feedback">            Please provide a valid st
-                        </div>
-                                    </div>
+                                        {/* <div class="invalid-feedback">Please provide a valid phone number.
+                                        </div> */}
 
-                                    <div class="col-md-3 mb-3">
-                                        <label for="validationCustom07">Zip</label>
-                                        <input type="text" class="form-control" id="validationCustom07" placeholder="Zip" required>
-                                        </input>
-                                        <div class="invalid-feedback">
+                                    {/* </div> */}
+
+
+                                    {/* <div class="col-md-3 mb-3"> */}
+
+
+                                        {/* <label for="validationCustom04">e-mail</label> */}
+
+
+                                        {/* <input type="text" class="form-control" id="validationCustom04" placeholder="e-mail" required>
+                                        </input> */}
+
+                                        {/* <div class="invalid-feedback"> Please provide a valid email
+                                        </div> */}
+
+                                    {/* </div> */}
+
+                                {/* </div> */}
+                            {/* </form> */}
+
+
+
+                            {/* <form class="needs-validation" novalidate>
+                                <div class="form-row"> */}
+
+                                    {/* <div class="col-md-3 mb-3"> */}
+
+                                        {/* <label for="validationCustom05">City
+                                        </label> */}
+
+                                        {/* <input type="text" class="form-control" id="validationCustom05" placeholder="City" required>
+                                        </input> */}
+
+                                        {/* <div class="invalid-feedback">        Please provide a valid city.
+                                        </div> */}
+
+                                    {/* </div> */}
+
+
+                                    {/* <div class="col-md-3 mb-3"> */}
+                                        
+                                        {/* <label for="validationCustom06">State</label> */}
+
+
+                                        {/* <input type="text" class="form-control" id="validationCustom06" placeholder="State" required>
+                                        </input> */}
+
+                                        {/* <div class="invalid-feedback"> Please provide a valid street
+                                        </div> */}
+
+                                    {/* </div> */}
+
+
+
+                                    {/* <div class="col-md-3 mb-3"> */}
+
+                                        {/* <label for="validationCustom07">Zip</label> */}
+
+                                        {/* <input type="text" class="form-control" id="validationCustom07" placeholder="Zip" required>
+                                        </input> */}
+
+
+                                    {/* <div class="invalid-feedback">
                                             Please provide a valid zip.
-                             </div>
-                                    </div>
-                                </div>
-                            </form>
+                                    </div> */}
 
 
-                            <form>
+                                    {/* </div> */}
+
+
+                                {/* </div>
+                            </form> */}
+
+
+
+
+                            <div className="col-12">
+                                <Chatbox />
+                            </div>
+                            {/* Original Message Box  */}
+                            {/* <form>
                                 <div class="form-group">
-
-
-                                    {/* <label for="recipient-name" class="col-form-label">Recipient:</label>
-                                    <input type="text" class="form-control" id="recipient-name">
-                                    </input> */}
-
 
                                     <div class="form-group">
                                         <label for="message-text" class="col-form-label">Message:</label>
                                         <textarea class="form-control" id="message-text"></textarea>
+                                        <form class="form-control" id="message-text"></form>
                                     </div>
                                 </div>
                             </form>
 
+
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                 <button type="button" class="btn btn-primary">Send message to owner</button>
-                            </div>
-                        </div>
+                            </div> */}
+
                     </div>
                 </div>
             </div>

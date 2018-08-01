@@ -1,0 +1,45 @@
+#messages {
+    margin: 25px; padding: 0; box-sizing: border-box; }
+
+#m{
+    font: 15px Helvetica, Arial;
+    height: 100px;
+    width: 430px;
+    position: flex;
+}
+ /*
+   
+    form input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
+    
+    #messages { list-style-type: none; margin: 0; padding: 0; }
+    #messages li { padding: 2px 2px; }
+    #messages li:nth-child(odd) { background: #eee;
+} */
+
+form { 
+    background: white; 
+    padding: 1px; 
+    position: relative; 
+    /* bottom: 0;  */
+    width: relative; 
+}
+
+form input { 
+    border: 0; 
+    padding: 5px; 
+    width: 423px; 
+    margin-right:5px; 
+    margin-bottom: 5px;
+    margin-left:5px;
+    margin-top:5px;
+    display:fixed;
+    /* height: 15px; */
+    border: 2px solid black;
+}
+
+form button { 
+    width: 55%; 
+    /* background: blue; */
+    background: rgb(130, 224, 255); border: 1px solid black; 
+    padding: 5px; 
+}
