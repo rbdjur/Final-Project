@@ -33,15 +33,18 @@ const Interact = () =>
 
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Inquire
             </button>
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
+
+            <div class="modal fade" id="exampleModal" tabindex="5" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+
+                <div class="modal-dialog" role="document" id="headest">
+                    <div class="modal-content" id="button" value="submit-button">
+                        <div class="modal-header" id="head">
                             <h5 class="modal-title" id="exampleModalLabel">Leave a message for owner</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
-                        </div>
+                            </div>
                        
                
             
@@ -172,9 +175,20 @@ const Interact = () =>
 
 
 
+
+
+
+
                             <div className="col-12">
                                 <Chatbox />
                             </div>
+
+
+
+
+
+
+
                             {/* Original Message Box  */}
                             {/* <form>
                                 <div class="form-group">

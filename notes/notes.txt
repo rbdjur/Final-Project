@@ -80,7 +80,7 @@ Error: ENOENT: no such file or directory, stat '/Users/deguzman714/first_day_stu
 Need to work on getting those features of socket.io working, especially the chat box of server.js.
 
 
-
+07/31/2018
 Jessica's page 
 
 OG route:
@@ -113,5 +113,88 @@ on component did mount {
 
 Comment out the fields on the "Inquire" page, only leave a message box. 
 
+
+08/01/2018
+9:45 PM 
+If app doesnt work, an issue can be on Chat.js:
+* The way:
+ "
+    class Chat extends React.component
+ 
+                                        "
+ 
+  needs to be modified to: 
+  " 
+    class App extends Component
+
+                                    "
+
+and add: 
+
+"
+    import React, { Component } from "react";
+
+                                            "
+to the first line. 
+
+
+10:51 PM 
+added:
+"
+    "proxy": "http://localhost:3001"
+                                  
+                                   "
+
+At the end of the object:
+
+"scripts": {
+
+},
+
+I started off with:
+"
+    "proxy": "http://localhost:3001"
+                                
+                                "
+"3001" is the port the sockets are initilized on... If this doesnt work then change "3001" to "3000" to match the regular server. 
+
+
+3000 = nothing works at all
+3001 = the route "/Confirmation" doesn't work, but route "/Chat" works but the messages or users dont post but a empty message does. 
+
+
+08/02/2018
+1. 
+In order to communicate front end and backend... You must go to the client fold and run "npm run start".  Then, open a separate terminal window and go to the backend folder and run "nodemon server.js".  
+
+At that point both servers should be in communication with each other. 
+
+2.  Target hits but without messages or username appearing.
+There are blank messages dispalying on the messageboard.  I know the sockets are connected and workign with the server.  However, I beleive there may be a bug in the react component that calls what information to pass to the state and what the setState() method is registering. 
+
+3. 10:57 AM
+Got the chat box to work... How would I verify it works for other people who visit that route... not just me. 
+
+4.  11:23 AM
+Each individual component and their respecitve routes work on their own.  However, when I try to bring eveyrhting together and create multipe Routes using the built in switch function of react.  I cannot bounce between routes ("/Confirmation" and "/Chat").  
+
+However, These routes work on their own indivvidually whichever route I am on when i reset the front end server and backend server. 
+
+Question: The parts work separate of each other, I used <Switch> + </Switch> in app.js to try and separate the two but how do I make them work together?
+
+I get this error response: 
+"
+
+
+Proxy error: Could not proxy request /socket.io/socket.io.js from localhost:3000 to http://localhost:3000.
+See https://nodejs.org/api/errors.html#errors_common_system_errors for more information (ECONNRESET).
+
+                "
+
+
+11:35 AM 
+So I searched the proxy error listed above... What I found was that I should run the backend server first, then the front end server immediately after.  This resolves my issue of having one route work but the other route not working.  Right now, I can switch back and forth between routes.  The only issue is that after I start the backend server and proceed to start the front end server.  The terminal server asks me to run the server on a different port number (in the first working example the port offered was 3002).  I accepted this and continued to run it which resolved my previous issue.  
+
+Question: the pathways for "/Confirmation" and "/Chat" are complete and work in this new format of running on a separate server.  How do I get this to run without having terminal prompting me to run on a different port number?
 
 

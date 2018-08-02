@@ -1,0 +1,14 @@
+#m {
+    /* display:flex; */
+    position:relative;
+}
+
+#outside-m-box{
+    position: relative;
+    background-color: red;
+}   
+
+#messages {
+    background-color: white;
+    height: 50px;
+}

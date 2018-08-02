@@ -13,4 +13,10 @@ router.get("/Confirmation", (req, res) => {
     // console.log("this is the catch error" + error)
 });
 
+router.get("/Inquire", (req, res) => {
+    res.sendFile(__dirname + '/index.html');
+});
+
+// })
+
 module.exports = router;

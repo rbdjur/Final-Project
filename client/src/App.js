@@ -1,40 +1,68 @@
 import React, { Component } from 'react';
 
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import Navbar from "./components/Navbar/Navbar"
-import Jumbotron from "./components/Jumbotron/Jumbotron"
-// import Calendar from "./components/Calendar/Calendar"
-import { DateRange } from 'react-date-range';
 
-// import Confirm from "./components/Confirm/Confirm"
-import Interact from "./components/Interact/Interact"
-import Inquire from "./components/Inquire/Inquire"
-import "./components/Navbar/Navbar.css";
 import './App.css';
 import ConfirmationPage from './components/ConfirmationPage/ConfirmationPage';
-// import "./components/Calendar/Calendar.css";
+
+import Chat from "./components/Chat/Chat"
+
+// import Testpage from "./components/Testpage/Testpage.js"
+
+// import api from "./api"
 
 class App extends Component {
 
-  state = {
-    date: new Date(),
-  }
+  // state = {
+  //   timestamp: "no timestamp yet",
+  //   stuff: []
+  // }
 
-  handleSelect(date) {
-    console.log(date);
-  }
+  // constructor(props) {
+  //   super(props);
 
-  componentDidMount() {
-  }
+  // }
+
+
 
   render() {
     return (
-      <Router>
-        <Route exact path="/Confirmation" 
-          component={ConfirmationPage}
-          />
-      </Router>
+
+
+// const App = () => ( 
+
+  <Router>
+    <div>
+    {/* <Switch> */}
+      <div>
+<Route 
+exact path="/Chat"
+  component={Chat}
+/>
+ <Route 
+  exact path="/Confirmation"
+    component={ConfirmationPage}
+  />
+      </div>
+{/* </Switch> */}
+</div> 
+</Router>
+
+// );
+
+
+
+
+
+      /* <Route exact path="/chat"
+      //   component={Chat}
+      //   /> */
+
+
+      /* <Router> */
+      /* <Route exact path="/Chat" component={Chat}
+      /> */
 
     )
   }

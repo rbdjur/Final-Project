@@ -1,5 +1,9 @@
 #messages {
-    margin: 25px; padding: 0; box-sizing: border-box; }
+    margin: 25px; 
+    padding: 0; 
+    box-sizing: border-box; 
+    border: 2px solid black;
+}
 
 #m{
     font: 15px Helvetica, Arial;

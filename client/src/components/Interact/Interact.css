@@ -6,9 +6,30 @@
 
 #inquireModal {
     border: 2px green solid;
-
 }
 
+#exampleModalLabel {
+    /* align-content: center; */
+    text-align: center;
+}
+
+#head {
+    /* position: relative; */
+    /* text-align: center; */
+}
+
+#header{
+    position: relative;
+    background: red;
+    /* text-align: center; */
+}
+
+#button{
+    background-color: red;
+    text-align: center;
+    padding:30px;
+
+}
 
 #view-btn {
     /* color: */
