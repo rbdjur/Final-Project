@@ -202,4 +202,28 @@ Microservice architechuter
 
 Chat server.js is a microservice... does one part of aplciation. 
 
+6:18 
+1. switched server port from "3000" to "3001" and socketPORT from "3001" to "3002".
+
+2. created a variable called messageLog as an empty array.  This empty array will be used to temporarily store messages in the chatbox.  
+
+3. included a socket.emit() function that shows the messages to all the users to a specific socket.  
+
+4. io is everybody / socket is for specific channel. 
+
+5.  in Chat.js I added: 
+"
+        this.socket.on('RECEIVE_MESSAGELOG', (messageLog) => {
+            this.setState({
+                messages: messageLog,
+            });
+        });
+
+                                                        "
+These codes communicate with our specific socket which our server is located on.  Here we pass messageLog through this.socket.on(), and update the messages state to the messageLog. 
+
+*messageLog is not previously defined in react because we are using the socket on the server which serves as the reference. 
+
+
+
 
