@@ -5,8 +5,8 @@ import io from "socket.io-client";
 
 
 // class App extends Component
-class Chat extends React.Component{
-    constructor(props){
+class Chat extends React.Component {
+    constructor(props) {
         super(props);
 
         this.state = {
@@ -15,15 +15,21 @@ class Chat extends React.Component{
             messages: []
         };
 
-        this.socket = io("localhost:3001");
+        this.socket = io("localhost:3002");
 
-        this.socket.on('RECEIVE_MESSAGE', function(data){
+        this.socket.on('RECEIVE_MESSAGE', function (data) {
             addMessage(data);
+        });
+
+        this.socket.on('RECEIVE_MESSAGELOG', (messageLog) => {
+            this.setState({
+                messages: messageLog,
+            });
         });
 
         const addMessage = data => {
             console.log("This is data: " + data);
-            this.setState({messages: [...this.state.messages, data]});
+            this.setState({ messages: [...this.state.messages, data] });
             console.log("This.state.messages = " + this.state.messages);
         };
 
@@ -33,14 +39,14 @@ class Chat extends React.Component{
                 author: this.state.username,
                 message: this.state.message
             });
-            this.setState({message: ""})
+            this.setState({ message: "" })
         }
     }
 
-  
 
 
-    render(){
+
+    render() {
         return (
             <div className="container">
                 <div className="row">
@@ -48,29 +54,29 @@ class Chat extends React.Component{
                         <div className="card">
                             <div className="card-body">
                                 <div className="card-title">Chat Board</div>
-                                <hr/>
+                                <hr />
                                 <div className="messages">
-                                {this.state.messages.map(message => {
-                                    return (
-                                        <div>{message.author}: {message.message}
-                                        </div>
-                                    )
-                                })}   
+                                    {this.state.messages.map(message => {
+                                        return (
+                                            <div>{message.author}: {message.message}
+                                            </div>
+                                        )
+                                    })}
                                 </div>
                             </div>
 
 
 
                             <div className="card-footer">
-                                    <input type="text" placeholder="Username" value={this.state.username} onChange={ev => this.setState({username: ev.target.value})} className="form-control"/>
+                                <input type="text" placeholder="Username" value={this.state.username} onChange={ev => this.setState({ username: ev.target.value })} className="form-control" />
 
-                                    <br/>
+                                <br />
 
-                                    <input type="text" placeholder="Message" className="form-control" value={this.state.message} onChange={ev => this.setState({message: ev.target.value})} />
+                                <input type="text" placeholder="Message" className="form-control" value={this.state.message} onChange={ev => this.setState({ message: ev.target.value })} />
 
-                                    <br/>
+                                <br />
 
-                                    <button onClick={this.sendMessage} className="btn btn-primary form-control">Send</button>
+                                <button onClick={this.sendMessage} className="btn btn-primary form-control">Send</button>
                             </div>
                         </div>
                     </div>

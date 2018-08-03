@@ -30,26 +30,26 @@ class App extends Component {
     return (
 
 
-// const App = () => ( 
+      // const App = () => ( 
 
-  <Router>
-    <div>
-    {/* <Switch> */}
-      <div>
-<Route 
-exact path="/Chat"
-  component={Chat}
-/>
- <Route 
-  exact path="/Confirmation"
-    component={ConfirmationPage}
-  />
-      </div>
-{/* </Switch> */}
-</div> 
-</Router>
+      <Router>
+        <div>
+          {/* <Switch> */}
+          <div>
+            <Route
+              exact path="/Chat"
+              component={Chat}
+            />
+            <Route
+              exact path="/Confirmation"
+              component={ConfirmationPage}
+            />
+          </div>
+          {/* </Switch> */}
+        </div>
+      </Router>
 
-// );
+      // );
 
 
 

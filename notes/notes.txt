@@ -197,4 +197,9 @@ So I searched the proxy error listed above... What I found was that I should run
 
 Question: the pathways for "/Confirmation" and "/Chat" are complete and work in this new format of running on a separate server.  How do I get this to run without having terminal prompting me to run on a different port number?
 
+5:48 PM
+Microservice architechuter 
+
+Chat server.js is a microservice... does one part of aplciation. 
+
 

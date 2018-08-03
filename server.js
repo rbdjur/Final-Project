@@ -9,7 +9,7 @@ const bodyParser = require("body-parser");
 // defining router and assigning it to require the ConfirmationRoutes.js page enables use to use what is on that page
 const router = require("./routes/ConfirmationRoutes")
 // Define port
-const PORT = 3000
+const PORT = 3001;
 // Code below is alternate of code above
 // const PORT = process.env.PORT || 3000
 
@@ -47,9 +47,10 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/FinalProject");
 
 
 
-
+// put socket.io into separate "project" b/c limitations to heroku.
+// CORS - check for configuration to enable CORS to prevent error.
 const socket = require('socket.io');
-const socketPORT = 3001
+const socketPORT = 3002
 
 // socket.io server socket
 server = app.listen(socketPORT, function (err) {
@@ -59,13 +60,18 @@ server = app.listen(socketPORT, function (err) {
 
 io = socket(server);
 
+const messageLog = [];
+
 // initlization of socket
 io.on('connection', (socket) => {
   console.log("Inside io.on.connection - returning socket.id: ", socket.id);
 
+  socket.emit('RECEIVE_MESSAGELOG', messageLog);
+
   socket.on('SEND_MESSAGE', function(data){
-    io.emit('RECEIVE_MESSAGE', data);
-})
+      messageLog.push(data);
+      io.emit('RECEIVE_MESSAGE', data);
+  })
 });
 
 
